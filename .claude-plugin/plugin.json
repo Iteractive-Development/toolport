@@ -1,0 +1,7 @@
+{
+  "name": "toolport",
+  "version": "1.0.1",
+  "description": "Connects to Toolport, the local MCP hub.",
+  "author": { "name": "brad" },
+  "icon": "./assets/icon.png"
+}
