@@ -4,7 +4,7 @@ description: >
   Connects EnConvo to Toolport, the local MCP hub: one gateway exposing every MCP server configured in the Toolport app through search, call, script, confirm and paging meta-tools.
 metadata:
   author: brad
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Toolport — the local MCP hub

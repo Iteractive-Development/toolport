@@ -25,6 +25,8 @@ The committed `mcp.json` (Enconvo, Codex) and `.mcp.json` (Claude Code) carry **
 
 Until the required token is filled in, the plugin shows **Need configure**; the gateway server starts as soon as it is set.
 
+> **Note on `type: streamable-http`:** `mcp.json` uses the Agent-Plugins schema's spelling (`streamable-http`, the same transport Enconvo docs call `http`); `.mcp.json` (Claude Code) uses `http`. Enconvo accepts both spellings, and installs either file unchanged.
+
 ## Skills
 
 - `toolport` — when and how to drive the gateway meta-tools.
@@ -32,4 +34,4 @@ Until the required token is filled in, the plugin shows **Need configure**; the 
 
 ## Security
 
-No credential is committed to this repository, in any file or in the git history. The token lives only in the plugin's sensitive settings on your Mac.
+No credential is committed to this repository, in any file or in its history. The token lives only in the plugin's sensitive settings on your Mac.

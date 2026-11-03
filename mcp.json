@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "toolport": {
-      "type": "http",
+      "type": "streamable-http",
       "url": "${user_config.hub_url}",
       "headers": {
         "Authorization": "Bearer ${user_config.api_token}"
