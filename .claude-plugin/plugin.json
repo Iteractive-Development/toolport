@@ -1,7 +1,23 @@
 {
   "name": "toolport",
-  "version": "1.0.1",
-  "description": "Connects to Toolport, the local MCP hub.",
+  "version": "1.1.0",
+  "description": "Connects EnConvo to Toolport, the local MCP hub: one gateway exposing every MCP server configured in the Toolport app through search, call, script, confirm and paging meta-tools.",
   "author": { "name": "brad" },
-  "icon": "./assets/icon.png"
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://toolport.app",
+  "userConfig": {
+    "hub_url": {
+      "type": "string",
+      "title": "Toolport gateway URL",
+      "description": "MCP endpoint of your Toolport gateway. Use http://127.0.0.1:8766/mcp when Toolport runs on this Mac (default), or an https:// URL for a remote gateway.",
+      "default": "http://127.0.0.1:8766/mcp"
+    },
+    "api_token": {
+      "type": "string",
+      "title": "Toolport API token",
+      "description": "Bearer token issued by the Toolport app for its gateway.",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

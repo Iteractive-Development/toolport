@@ -1,1 +1,4 @@
-mcp.json
+# Local secrets never belong in this repo; the committed mcp.json uses
+# ${user_config.*} references, so nothing sensitive needs a local override.
+.env
+*.local.json

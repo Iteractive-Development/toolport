@@ -1,17 +1,18 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "toolport",
-  "version": "1.0.1",
-  "description": "Connects EnConvo to Toolport, the local MCP hub: one gateway exposing every MCP server configured in the Toolport app through search, call, confirm and paging meta-tools.",
+  "version": "1.1.0",
+  "description": "Connects EnConvo to Toolport, the local MCP hub: one gateway exposing every MCP server configured in the Toolport app through search, call, script, confirm and paging meta-tools.",
   "author": { "name": "brad" },
   "license": "MIT",
+  "homepage": "https://toolport.app",
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://toolport.app",
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Toolport MCP Hub",
-        "shortDescription": "Every MCP server in the Toolport app, behind one gateway",
+        "shortDescription": "Every MCP server, one gateway",
+        "category": "Developer Tools",
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png"
       }
