@@ -1,15 +1,15 @@
 ---
 name: toolport
 description: >
-  Connects EnConvo to Toolport, the local MCP hub: one gateway exposing every MCP server configured in the Toolport app through search, call, confirm and paging meta-tools.
+  Connects EnConvo to Toolport, the local MCP hub: one gateway exposing every MCP server configured in the Toolport app through search, call, script, confirm and paging meta-tools.
 metadata:
   author: brad
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Toolport — the local MCP hub
 
-Toolport (a Mac app) holds the connections and credentials for every MCP server you configure in it. Instead of mounting hundreds of downstream tools into your context, it exposes **five meta-tools**. Downstream tools are discovered on demand.
+Toolport (a Mac app) holds the connections and credentials for every MCP server you configure in it. Instead of mounting hundreds of downstream tools into your context, it exposes **six meta-tools** — five registered at rest (`toolport_status`, `toolport_search_tools`, `toolport_call_tool`, `toolport_fetch_result`, `toolport_run_script`), plus `toolport_confirm`, which appears while a destructive call is blocked. Downstream tools are discovered on demand.
 
 ## The pattern (always follow this order)
 
